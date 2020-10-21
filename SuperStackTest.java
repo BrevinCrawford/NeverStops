@@ -6,40 +6,44 @@ import org.junit.jupiter.api.Test;
 class SuperStackTest {
 
 	@BeforeEach
-	void setUp() throws Exception {
+	public void setUp() throws Exception {
 	}
-	
+
 	@Test
-	void testSuperStack() {
+	public void testSuperStack() {
 		fail("not yet implemented");
 	}
 
 	@Test
-	void testIsEmpty() {
+	public void testIsEmpty() {
 		// create and empty stack and check if it empty
-		SuperStack<Integer> stack = new SuperStack<Integer>(1);
+		SuperStack<Integer> stack = new SuperStack<>(1);
 		boolean result = stack.isEmpty();
 		assertTrue(result);
+
+		stack.push(new Integer(0));
+		result = stack.isEmpty();
+		assertFalse(result);
 		// add a few elements and check if it is empty
 	}
 
 	@Test
-	void testIsFull() {
+	public void testIsFull() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testPush() {
+	public void testPush() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testPop() {
+	public void testPop() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testToString() {
+	public void testToString() {
 		fail("Not yet implemented");
 	}
 
